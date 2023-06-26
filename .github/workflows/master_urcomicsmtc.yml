@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'UrComicsMTC'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1523DE175CC540878CE23DFCD9C62834 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C96F19E266E14B61AEFC8B9675C7C50E }}
           package: .
