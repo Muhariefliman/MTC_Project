@@ -10,8 +10,9 @@ server {
     index  index.php index.html index.htm;
     server_name  example.com www.example.com; 
 
-    location / {            
-        try_files $uri $uri/ /index.php?$args; # changed for Laravel
+    location / {
+        autoindex on;
+        autoindex_exact_size on;
     }
 
     # redirect server error pages to the static page /50x.html
