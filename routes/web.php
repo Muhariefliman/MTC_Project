@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+if (App::environment('production')) {  
+    URL::forceScheme('https');  
+}
+
 Route::get('/', [Controller::class, 'home']);
 Route::get('/home', [Controller::class, 'home']);
 Route::get('/home/search', [Controller::class, 'search'])->name('search');
